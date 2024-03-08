@@ -1,3 +1,7 @@
+.progress-cont{
+  margin-top: 0px;
+}
+
 .progress {
   position: relative; /* with scale */
   height: 6px;

@@ -3,6 +3,9 @@ import './content.css'
 
 
 const Content = () => {
+  const glaucomaPercent = 75.8;
+  const drPercent = 100;
+  const nodrPercent=99.3;
 
   return(
     <>
@@ -41,10 +44,19 @@ const Content = () => {
              <p className='para'>This report is for screening purpose only. No<br/>way is this meant to replace doctor's<br/>diagnosis. kindly correlate clinically</p>
           </div> 
           <div className='possible-diseases-container'>
+            <h3>Possible Diseases</h3>
             <p>Disease report</p>
-             <ProgressBar />
+             <ProgressBar  name={"Galucoma"} percent={glaucomaPercent} />
             <p>DR Report</p>
+            <ProgressBar name={"dr_0"} percent={drPercent} />
             <p>Additional Report</p>
+            <ProgressBar name={"no_dr"} percent={nodrPercent} />
+            <div>
+              <ul>
+                <li>Doctor Review Recommended</li>
+              </ul>
+              
+            </div>
           </div>
       </div>
      </div> 

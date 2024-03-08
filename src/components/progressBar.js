@@ -1,21 +1,19 @@
 import './progressBar.css'
 
-const ProgressBar= () => {
-
- const percent = 75;
+const ProgressBar= ({name, percent}) => {
 
   return (
     <>
-      <div>
+      <div class="progress-cont">
         <div className='name-cont'>
-           <p>Glaucoma</p>
-           <p><span>{percent.toFixed()}%</span></p>
+           <p className='name'>{name}</p>
+           <p><span>{parseFloat(percent)}%</span></p>
         </div>
          <div className="progress">
             <div
         // style={{ width: `${percent}%` }}
                 style={{
-                transform: `scaleX(${percent/100})`,
+                transform: `scaleX(${(parseFloat((percent)/100))})`,
                  transformOrigin: "left"
                 }}
         
