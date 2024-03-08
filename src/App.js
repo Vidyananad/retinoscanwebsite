@@ -11,9 +11,10 @@ function App() {
        <div className='text-heading'>
          <center>
              <h1>Empowering Healthcare with<br/><span className=''>Artificial Intelligence</span></h1>
-          </center>
+         </center>
        </div>
        <Content/>
+   
     </div>
   );
 }

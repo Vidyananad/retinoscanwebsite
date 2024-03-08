@@ -2,15 +2,30 @@
   display: flex;
   flex: row;
 }
+
+.fundus-oct{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 .fundus{
-  margin:100px;
-  height:500px;
+  margin: 10px;
+  height:350px;
   width:350px;
 }
+
+.oct{
+  margin:10px;
+  height:300px;
+  width:350px;
+}
+
 .heading{
   color:rgb(5, 180, 234);
   text-align: center;
 }
+
 .button-item{
   height:40px;
   font-size: 15px;
@@ -26,13 +41,13 @@
   color:white;
 }
 
-.button-item:selected {
+.button-item:active {
   background-color: rgb(5, 180, 234);
   color:white;
 }
 
 .report{
-  margin:100px;
+  margin:auto;
 }
 
 .generated-report{
@@ -52,7 +67,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin: auto;
+  margin:auto;
 }
 
 .quadrant {
@@ -96,7 +111,7 @@
 
 .para{
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .bulls-eye{
@@ -106,10 +121,63 @@
 .possible-diseases-container{
   border: 1px solid rgb(5, 180, 234);
   border-radius: 20px;
-  padding:20px;
+  padding:15px;
+  content: border-box;
+}
+
+ul{
+  margin-top: 10px;
+  margin-left: 0px;
 }
 
 ul li::marker{
   color:red;
   font-size: 1.5rem;
+}
+
+.disease-name{
+  font-size: 14px;
+  color:rgb(5, 180, 234);
+  margin-bottom: 0px;;
+}
+
+.button-item-new{
+  height:40px;
+  font-size: 15px;
+  border: 2px solid rgb(5, 180, 234);
+  border-radius: 30px;
+  background-color: rgb(5, 180, 234);
+  color:white;
+  padding:10px;
+  margin:15px;
+}
+
+.button-item-new:hover{
+  color: rgb(5, 180, 234);
+  background-color:white;
+}
+
+.possible-disease-heading{
+  color: rgb(5, 180, 234);
+  margin-bottom: 0px;;
+}
+
+.red-ball{
+  height:10px;
+  width:10px;
+  background-color: red;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.doctor-recommend{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress-bar-cont{
+  display: flex;
+  flex-direction: column;
 }

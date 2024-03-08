@@ -1,3 +1,8 @@
+*{
+  content: border-box;
+  font-family: "niveau-grotesk", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -8,4 +13,15 @@
 
 span{
   color:rgb(5, 180, 234);
+}
+
+::-webkit-scrollbar {width: 10px;
+}
+
+::-webkit-scrollbar-track {background-color: #ffffff;border-radius: 2px;
+
+}
+
+::-webkit-scrollbar-thumb {background-color: rgb(5, 180, 234);border-radius: 2px;
+
 }
