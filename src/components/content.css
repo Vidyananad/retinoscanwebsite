@@ -1,22 +1,25 @@
 .container{
   display: flex;
-  flex: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
 }
 
 .fundus-oct{
   display: flex;
   flex-direction: column;
-  margin: auto;
-}
-
-.fundus{
-  margin: 10px;
-  height:350px;
+  margin: 30px;
   width:350px;
 }
 
+.fundus{
+  margin:auto;
+}
+
 .oct{
-  margin:10px;
+  margin-top:20px;
+  margin: 10px;
   height:300px;
   width:350px;
 }
@@ -33,6 +36,8 @@
   border-radius: 30px;
   background-color: white;
   padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin:10px;
 }
 
@@ -47,22 +52,28 @@
 }
 
 .report{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin:auto;
 }
 
 .generated-report{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .target-img {
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 380px;
+  height: 380px;
   background-image: url("https://www.artelus.ai/assets/images/icon/Bullseye.svg");
-  flex-shrink: 0;
+  flex-shrink:0;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +85,6 @@
   position: absolute;
   width: 50%;
   height: 50%;
-  background-size: cover;
 }
 
 
@@ -115,14 +125,13 @@
 }
 
 .bulls-eye{
-  width:150px;
+  width:280px;
 }
 
 .possible-diseases-container{
   border: 1px solid rgb(5, 180, 234);
   border-radius: 20px;
-  padding:15px;
-  content: border-box;
+  padding:10px;
 }
 
 ul{
@@ -142,24 +151,33 @@ ul li::marker{
 }
 
 .button-item-new{
-  height:40px;
-  font-size: 15px;
+  font-size: 20px;
   border: 2px solid rgb(5, 180, 234);
-  border-radius: 30px;
+  border-radius: 25px;
   background-color: rgb(5, 180, 234);
   color:white;
-  padding:10px;
-  margin:15px;
+  content: border-box;
+  margin:10px;
 }
 
 .button-item-new:hover{
-  color: rgb(5, 180, 234);
-  background-color:white;
+  color: rgb(0, 10, 14);
+}
+
+.button-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:35px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .possible-disease-heading{
   color: rgb(5, 180, 234);
-  margin-bottom: 0px;;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .red-ball{
@@ -180,4 +198,53 @@ ul li::marker{
 .progress-bar-cont{
   display: flex;
   flex-direction: column;
+}
+
+.upload-button-cont{
+  margin:20px;
+}
+
+.upload-name{
+  margin-right: 10px;
+}
+
+@media screen and (max-width:910px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:910px) and (max-width:1050px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .target-img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .bulls-eye{
+    width:230px;
+  }
+
+  .fundus-oct{
+    height:650px;
+    width:250px;
+  }
+
+  .button-item-new{
+    font-size: 15px;
+  }
+
+  .report{
+    height: 680px;
+    width:250px;
+  }
+
 }
