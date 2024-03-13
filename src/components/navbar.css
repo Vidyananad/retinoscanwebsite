@@ -1,11 +1,14 @@
+.nav-container{
+  background-color: rgb(5, 180, 234);;
+}
+
 .navbar{
   background-color: rgb(5, 180, 234);;
+  padding:10px;
+  color:#ffffff;
+  font-weight: 550;
   display:flex;
   justify-content: space-between;
-  align-items: center;
-  padding:10px;
-  height:10%px;
-  color:#ffffff;
 }
 
 .lang{
@@ -17,9 +20,10 @@
 }
 
 .textCont{
-display: flex;
 margin-right: 20px;
 color:#ffffff;
+display: flex;
+  flex-direction: row;
 }
 
 .text{
@@ -28,4 +32,8 @@ color:#ffffff;
 
 .img{
   width:100%;
+}
+
+.text-english{
+  margin:10px;
 }
